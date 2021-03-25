@@ -23,6 +23,7 @@ body {
 #side-bar{
   padding: 0;
   max-width: 22%;
+  min-width
   max-height: 100%
   float: left;
   background-color: #3c3c3c;
@@ -138,10 +139,36 @@ body {
 	color: #3c3c3c;
 }
 
-@media screen and (max-width: 600px) {
-  #side-bar, #content {
-    width: 100%;
-  }
+@media only screen and (max-width: 1000px) {
+	#side-bar{
+		min-width: 100%;
+		float:none;
+		position: static;
+		padding-bottom: 0%;
+		display: inline;
+		background-color: #3c3c3c;
+		overflow: hidden;
+	}
+	
+	#profile {
+		background-color: #3c3c3c;
+	}
+	
+	#profile-pic {
+		padding-left: 20%;
+		padding-rigth: 10%;
+	}
+	
+	#navigators {
+		background-color: #3c3c3c;
+		overflow: hidden;
+	}
+  
+	#content {
+		float:none;
+		display: inline;
+	}
+	
 }
 
 </style>
