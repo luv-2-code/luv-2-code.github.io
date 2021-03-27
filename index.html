@@ -141,13 +141,19 @@ body {
 
 #workExperience {
 	padding-left: 5%;
-	padding-top:5%;
+	padding-top:2%;
+	color: #3c3c3c;
+}
+
+#awards {
+	padding-left: 5%;
+	padding-top:2%;
 	color: #3c3c3c;
 }
 
 #contactme {
 	padding-left: 5%;
-	padding-top:5%;
+	padding-top:1%;
 	padding-bottom:10%;
 	color: #3c3c3c;
 }
@@ -166,10 +172,11 @@ body {
 }
 
 
-.vl {
+.vl-manh, .vl-wipro {
   border-left: 0.1px dashed #3c3c3c;
   /*display:inline-block;*/
   margin-left:45px;
+  height: 200px;
 }
 
 .company-header {
@@ -190,6 +197,7 @@ body {
 
 .experience-detail {
 	display:inline;
+	text-overflow: 
 }
 
 .job-title {
@@ -213,6 +221,32 @@ body {
 
 .color-dot {
 	background-color: #FFC700;
+}
+
+.content-style {
+	opacity: 0.9; 
+	font-size: 15px;
+}
+
+.period {
+	display: inline-block;
+}
+
+#manhattan {
+	padding-bottom: 20px;
+}
+
+#all-awards {
+	padding-left: 30px;
+}
+
+.award-title {
+	font-size: 15px;
+	padding-bottom: 7px;
+}
+
+.award-des {
+	font-size: 14px;
 }
 
 
@@ -263,6 +297,41 @@ body {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	
+	.period {
+		display: block;
+		padding-top: 10px;
+	}
+	
+	#manhattan {
+		padding-bottom: 30px;
+	}
+	
+	.vl-manh {
+		border-left: 0.1px dashed #3c3c3c;
+		margin-left:45px;
+		height: 210px;
+	}
+	
+	.vl-wipro {
+		border-left: 0.1px dashed #3c3c3c;
+		margin-left:45px;
+		height: 210px;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	#manhattan {
+		padding-bottom: 20px;
+	}
+	
+	.vl-manh {
+		height: 315px;
+	}
+	
+	.vl-wipro {
+		height: 280px;
+	}
 }
 
 </style>
@@ -281,7 +350,8 @@ body {
 		<li><i class="fa fa-globe icon-style" ><a href="#coverpage" class="navigator-style">Welcome</a></i></li>
 		<li><i class="fa fa-pencil icon-style" ><a href="#aboutme" class="navigator-style">About me</a></i></li>
 		<li><i class="fa fa-angellist icon-style" ><a href="#workExperience" class="navigator-style">Work Experience</a></i></li>
-		<li><i class="fa fa-file icon-style" ><a href="#mycv" class="navigator-style">My CV</a></i></li>
+		<li><i class="fa fa-file icon-style" ><a href="Resume_Siva.pdf" target="_blank" class="navigator-style">My CV</a></i></li>
+		<li><i class="fa fa-award icon-style" ><a href="#awards" class="navigator-style">My Awards</a></i></li>
 		<li><i class="fa fa-link icon-style" ><a href="#contactme" class="navigator-style">Contact Me</a></i></li>
 	</ul> 
 </div>
@@ -392,76 +462,109 @@ body {
 			</table>
 	   </div>
 	   <h5>LEARN ABOUT ME</h5>
-	   <ul>
-			<li>point 1 adsflkasfjkasjdadkfjlasdsjdflkakldsjflkasdkfjklasdjf</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
-			<li>point 1</li>
+	   <p class="content-style">I am Java <b>J2EE Developer</b> with over <b>5years and 5months experience.</b></p>
+	   <ul class="content-style">
+			<li>Extensive hands-on experience and expertise in software design, development, and integration.</li>
+			<li>Frontend Development knowledge in <b>AngularJs, Jquery, Javascript, HTML, CSS.</b></li>
+			<li>Backend Technology knowledge in <b>Java, Spring, Spring Boot, Spring REST Services, Spring Security, Microservices, Hibernate, JPA, mysql.</b></li>
+			<li>Experience working with tools like <b>Jenkins, Stash, GIT, Filezilla, Putty, Apache Tomcat, Maven.</b></li>
+			<li><b><a href="java_oca7.pdf" target="_blank" style="text-decoration: none;">Java 7 Oracle Certified Associate.</a></b></li>
+			<li>Good Analytical skills and a Quick Learner.</li>
+			<li>Understanding Customer and Business needs and delivering on time.</li>
+			<li>Passionate to learn new technology and always trying to give my best for my organization's development and growth.</li>
 	   </ul>
 	</div>
 	
 	<!-- Experience -->
 	<div id="workExperience">
 		<h5>WORK EXPERIENCE</h5>
-		
-		<div id="all-companies">
-	
+
 			<div id="manhattan">
-				<p style="display: inline-block;">Jan 2018 - Now</p>
-				<div class="vl" style="height: 210px;">
+				<p class="period">Jan 2018 - Now</p>
+				<div class="vl vl-manh">
 				<div class="company-header">
 				<div class="company-detail">
 					<img src="manhattan.png" alt="Manhattan Logo" width="60" height="65" style="float: left;" >
 					<div class="company-name">Manhattan Associates</div>
-					<div class="job-title">Senior Technical Analyst</div>
+					<div class="job-title">Senior Software Engineer</div>
 				</div>
 				<div class="experience-detail">
-					<ul>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>	
+					<ul class="content-style">
+						<li>Working on Labor Management product to enhance the efficiency of the Labor performance in the Warehouse. Technologies: Spring framework, Spring REST, Hibernate and Oracle DB, Javascript, jQuery, HTML, CSS.</li>
+						<li>Developed multiple modules in the product and supported the product with multiple customers around the globe in Implementing.</li>
+						<li>Designed and developed multiple customer level enhancements to make their business easy.</li>
+						<li>Leading a small team with 4 members and helping them learn the product/technology.</li>
+						<li>Honored with multiple awards and promotions in the span of 3years.</li>
 					</ul>
 				</div>
 				</div>
 				</div>
 			</div>
-			
+	
 			<div id="wipro">
-				<p style="display: inline-block;">Oct 2015 - Jan 2018</p>
-				<div class="vl" style="height: 210px;">
+				<p class="period">Oct 2015 - Jan 2018</p>
+				<div class="vl-wipro">
 				<div class="company-header">
 				<div class="company-detail">
 					<img src="wipro.png" alt="Wipro Logo" width="65" height="70" style="float: left;" >
 					<div class="company-name">Wipro Limited</div>
-					<div class="job-title">Project Engineer</div>
+					<div class="job-title">Associate Software Engineer</div>
 				</div>
 				<div class="experience-detail">
-					<ul>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>
-						<li>abcd</li>	
+					<ul class="content-style">
+						<li>Worked on Bluedart Revamp project in implementing the complete project with latest technologies like Spring Restful webservices, Spring MVC, Hibernate as a backend developer.</li>
+						<li>Used content management tool 'Liferay' for overall website management.</li>
+						<li>Worked on Tamil Nadu Treasury project to build their Internal website for maintaining grievance requests.</li>
+						<li>Used multiple technologies like Spring MVC, Hibernate, Javascript, jQuery, HTML, CSS and worked as a end to end full stack devleoper.</li>	
 					</ul>
 				</div>
 				</div>
 				</div>
 			</div>
 			
+	</div>
+	
+	<!-- Awards -->
+	<div id="awards">
+		<h5>HONOR AWARDS</h5>
+		
+		<div id="all-awards">
+			<ul style="list-style-type: square;">
+			
+				<li class="award-title">Wipro Talent Transformation Toppers Award - 2016
+					<ul class="award-des">
+						<li>This award was given to the toppers of the freshers who was trained in Java J2EE</li>
+					</ul>
+				</li>
+				
+				<li class="award-title">Manhattan Spot Bonus - 2018
+					<ul class="award-des">
+						<li>This award is given for the employees on spot when the employee achieves something.</li>
+					</ul>
+				</li>
+				
+				<li class="award-title">Manhattan Spirit Award - 2019
+					<ul class="award-des">
+						<li>This award is given directly by the CEO for the Best employee of the year and will be nominated by others in the company.</li>
+					</ul>
+				</li>
+				
+				<li class="award-title">Manhattan Star of the Quarter- 2019
+					<ul class="award-des">
+						<li>This award is given by the Internal department for the Best employee of the quarter.</li>
+					</ul>
+				</li>
+				
+				<li class="award-title">Manhattan Spot Bonus - 2020
+					<ul class="award-des">
+						<li>This award is given for the employees on spot when the employee achieves something.</li>
+					</ul>
+				</li>
+				
+			</ul>
 		</div>
 	</div>
+	
 	
 	<!-- Contact -->
 	<div id="contactme">
