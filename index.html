@@ -249,8 +249,10 @@ body {
 	font-size: 14px;
 }
 
-
 @media only screen and (max-width: 1000px) {
+	.test{
+		color: green;
+	}
 	#side-bar{
 		min-width: 100%;
 		float:none;
@@ -320,9 +322,17 @@ body {
 	
 }
 
+/*
 @media only screen and (max-width: 600px) {
+	.test{
+		color: red;
+	}
 	#manhattan {
 		padding-bottom: 20px;
+	}
+	
+	#wipro {
+		padding-top: 20px;
 	}
 	
 	.vl-manh {
@@ -332,16 +342,31 @@ body {
 	.vl-wipro {
 		height: 280px;
 	}
+}*/
+
+@media only screen and (max-width: 400px) {
+	.test{
+		color: blue;
+	}
+	#manhattan {
+		padding-bottom: 10px;
+	}
+	
+	#wipro {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	
+	.vl-manh {
+		height: 410px;
+	}
+	
+	.vl-wipro {
+		height: 380px;
+	}
 }
 
-@media only screen and (max-width: 50px) {
-	#manhattan {
-		padding-bottom: 100px;
-	}
-	.vl-manh {
-		height: 570px;
-	}
-}
+
 
 </style>
 <body>
@@ -545,7 +570,7 @@ body {
 	
 	<!-- Awards -->
 	<div id="awards">
-		<h5>HONOR AWARDSK</h5>
+		<h5 class="test">HONOR AWARDS</h5>
 		
 		<div id="all-awards">
 			<ul style="list-style-type: square;">
